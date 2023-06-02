@@ -1,7 +1,7 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-
+import 'package:rutas/src/widgets/icon_container.dart';
 
 
 class HomePages extends StatefulWidget {
@@ -34,9 +34,16 @@ class _HomePagesState extends State<HomePages> {
             vertical: 200
           ),
           children: <Widget>[
-            IconContainer(
-              url: 'images/logo.jpg'
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconContainer(
+                 url: 'images/logo.jpg'
+                 )
+              ],
+
             )
+      
           ],
         )
         ),
